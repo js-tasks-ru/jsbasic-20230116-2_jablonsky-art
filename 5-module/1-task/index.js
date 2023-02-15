@@ -3,6 +3,6 @@ function hideSelf() {
   button.addEventListener("click", function (event) {
     let target = event.target.closest("button");
     if (!target) return;
-    target.hidden = true;
+    button.hidden = true;
   });
 }

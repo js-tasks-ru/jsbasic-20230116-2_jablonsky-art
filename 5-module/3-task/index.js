@@ -7,11 +7,9 @@ function initCarousel() {
   let position = 0;
   let index = 0;
 
-  btnRigth.addEventListener("click", function (event) {
+  btnRigth.addEventListener("click", function () {
     index += 1;
 
-    const targetBtnRgt = event.target.closest(".carousel__arrow_right");
-    if (!targetBtnRgt) return;
     position -= size * count;
     carusel.style.transform = `translateX(${position}px)`;
 
@@ -25,10 +23,7 @@ function initCarousel() {
     return;
   });
 
-  btnLeft.addEventListener("click", function (event) {
-    const targetBtnRgt = event.target.closest(".carousel__arrow_left");
-    if (!targetBtnRgt) return;
-
+  btnLeft.addEventListener("click", function () {
     position += `${size}` * count;
     carusel.style.transform = `translateX(${position}px)`;
 
