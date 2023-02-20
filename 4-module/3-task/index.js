@@ -1,12 +1,4 @@
 function highlight(table) {
-  // for (let key of table.querySelectorAll("[data-available]")) {
-  //   let td = key.getAttribute("data-available");
-
-  //   let tr = key.parentElement;
-  //   let res = td
-  //     ? tr.classList.add("available")
-  //     : tr.classList.add("unavailable") || tr.classList.add("hidden");
-  // }
   for (let tr of table.children[1].rows) {
     // для каждой строки tr таблицы
     let available = tr.cells[3];
